@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #navbar{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: black;
+      color: white;
+    }
+    #form{
+      width: 20%;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .in{
+      margin: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <h3>Sign Up</h3>
+      <a href="voucher.html">Purchase Voucher</a>
+    </div>
+    <!-- - name input box :- "name"
+  - email input box :- "email"
+  - Address input box :- "address"
+  - Amount input box :- "amount" 
+  - Submit button :- "submit"
+  - The user will be stored with key:- "user"
+  - The input fields should become empty after submitting -->
+  <form id="form" onsubmit="SubmitMyform()">
+    <input type="text" id="name" placeholder="Enter your name" class="in">
+    <input type="email" id="email" placeholder="Enter your email" class="in">
+    <input type="text" id="address"  placeholder="Enter your address" class="in">
+    <input type="number" id="amount"  placeholder="Enter your amount" class="in">
+    <input type="submit" value="Submit" class="in">
+  </form>
+  </body>
+</html>
+
+<script src="./scripts/main.js"></script>
